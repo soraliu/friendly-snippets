@@ -29,7 +29,16 @@
     },
     "reactFunctionComponent": {
         "prefix": "rfc",
-        "body": "import React from 'react'\n\nexport const ${TM_FILENAME_BASE} = (props : {}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
+        "body": [
+            "import type { FC } from 'react'",
+            "",
+            "export const ${1:${TM_FILENAME_BASE}} = (props: {}) => {",
+            "  return (",
+            "    <>${1}</>",
+            "  )",
+            "}",
+            ""
+        ],
         "description": "Creates a React functional component without PropTypes"
     },
     "reactFunctionComponentWithEmotion": {
@@ -350,7 +359,7 @@
     "createReactHookWithName": {
         "prefix": "crhn",
         "body": [  "export const ${TM_FILENAME_BASE} = () => {", "\t$0", "}"],
-        "description": "Create React Hook using File name" 
+        "description": "Create React Hook using File name"
     },
     "describeBlock": {
         "prefix": "desc",

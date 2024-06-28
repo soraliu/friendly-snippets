@@ -242,7 +242,7 @@
                 "path": "./snippets/css.json"
             },
             {
-                "language": ["javascript", "javascriptreact", "vue", "svelte"],
+                "language": ["typescript", "typescriptreact", "javascript", "javascriptreact", "vue", "svelte"],
                 "path": "./snippets/javascript/javascript.json"
             },
             {
@@ -579,8 +579,13 @@
             {
                  "language": "loremipsum",
                  "path": "./snippets/loremipsum.json"
+            },
+
+
+            {
+                "language": ["typescriptreact"],
+                "path": "./snippets-custom/sb-react-ts.json"
             }
         ]
     }
 }
-
