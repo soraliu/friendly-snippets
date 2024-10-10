@@ -431,6 +431,10 @@
     "prefix": "cl",
     "body": "console.log(${0})"
   },
+  "console.log a line": {
+    "prefix": "cll",
+    "body": "console.log('[DEBUG] ${TM_FILENAME}:${TM_LINE_NUMBER}')"
+  },
   "console.log a variable": {
     "prefix": "cv",
     "body": "console.log('[DEBUG] ${TM_FILENAME}:${TM_LINE_NUMBER}', '${1}:', ${1})"
